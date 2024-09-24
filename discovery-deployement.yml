@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: discovery-deployement
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-guide
+  template:
+    metadata:
+      labels:
+        app: app-guide
+    spec:
+      containers:
+        - name: contdiscoveryy
+          image: imagediscovery
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8761
