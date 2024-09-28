@@ -4,7 +4,7 @@ metadata:
   name: discovery-service
 spec:
   selector:
-    app: app-guide
+    app: discovery
   ports:
     - protocol: TCP
       port: 8761

@@ -30,5 +30,5 @@ COPY --from=build /app/target/*.jar discovery.jar
 # Expose le port par défaut utilisé par le service Eureka (8761)
 EXPOSE 8761
 
-# Commande pour exécuter l'application
+# Commande pour exécuter l'applicationl
 ENTRYPOINT ["java", "-jar", "discovery.jar"]
